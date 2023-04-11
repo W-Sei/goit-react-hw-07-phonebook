@@ -14,14 +14,14 @@ import {
   Button,
   InputTitle,
   ErrorMes,
-} from './Add.styled';
+} from './AddContactForm.styled';
 
 const userSchema = object({
   nameContact: string().required(),
   number: string().required().min(5).max(20),
 });
 
-export const AddContact = () => {
+export const AddContactForm = () => {
 
   const dispatch = useDispatch();
   const contacts = useSelector(getContacts);

@@ -1,8 +1,8 @@
 import React from 'react';
 import { GlobalStyle } from 'GlobalStyles.styled';
-import { AddContact } from './AddCont/Add';
-import { FilterContact } from './FindCont/Find';
-import { RenderContact } from './RenderCont/Render';
+import { AddContactForm } from './AddContactForm/AddContactForm';
+import { FilterContact } from './FilterContact/FilterContact';
+import { ContactsList } from './ContactsList/ContactsList';
 
 import { Wrapper } from './Wrapper/Wrapper.styled';
 import { TitleContact, TitleMain } from './Title/Title.styled';
@@ -13,12 +13,12 @@ export const App = () => {
     <Wrapper>
       <GlobalStyle />
       <TitleMain>Phonebook</TitleMain>
-      <AddContact />
+      <AddContactForm />
 
       <ContactsWrapper>
         <TitleContact>Contacts</TitleContact>
         <FilterContact />
-        <RenderContact />
+        <ContactsList />
       </ContactsWrapper>
     </Wrapper>
   );

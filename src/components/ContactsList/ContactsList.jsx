@@ -1,11 +1,11 @@
 import React from 'react';
-import { List, Item, Button, Name } from './Render.styled';
+import { List, Item, Button, Name } from './ContactsList.styled';
 import { getContacts, getFilter } from '../../redux/selectors';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { deleteContact } from 'redux/contactSlice';
 
-export const RenderContact = () => {
+export const ContactsList = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(getContacts);
   const filter = useSelector(getFilter);
