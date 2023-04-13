@@ -1,13 +1,16 @@
 import styled from 'styled-components';
 import { Form, Field, ErrorMessage } from 'formik';
+import image from '../../images/wp7606734.webp';
+import imageButton from '../../images/button.png';
 
 export const FormSection = styled(Form)`
   margin-top: 20px;
   margin-bottom: 40px;
-  background-color: #F7F9BE;
+  background-color: rgba(225, 203, 173, 0.56);
   border: 1px transparent;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -19,12 +22,14 @@ export const AddNumberInput = styled(Field)`
   height: 35px;
   width: 350px;
   margin: 10px;
+  background-image: url(${image});
   border: 1px transparent;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 8px;
+  transition:all 0.3s ease;
   :hover,
   :focus {
-    box-shadow: rgb(221, 255, 85) 0px 0px 0px 3px, rgb(193, 165, 27) 0px 0px 0px 6px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
 `;
 
@@ -32,17 +37,20 @@ export const Button = styled.button`
   width: 175px;
   height: 35px;
   margin-top: 20px;
-  background-color: white;
+  font-weight: 700;
+  /* background-color: white; */
+  background-image: url(${imageButton});
   border-radius: 10px;
-  font-weight: 400;
-  border: 1px transparent;
+  border: 1px solid grey;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  transition:all 0.3s ease;
   :hover,
   :focus {
-    background-color: #F7E2B2;
+    background-color: #f7e2b2;
     border: 1px solid black;
     color: black;
-    font-weight: 600;
+    /* font-weight: 800; */
+    transform: scale(1.1);
   }
 `;
 

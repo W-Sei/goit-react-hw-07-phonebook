@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { List, Item, Button, Name } from './ContactsList.styled';
+import { List, Item, Button, Name, NameWrapper } from './ContactsList.styled';
 import { Loader } from 'components/Loader/Loader';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
@@ -29,8 +29,10 @@ export const ContactsList = () => {
       {loading && <Loader />}
       {filterContact.map(({ name, phone, id }) => (
         <Item key={id}>
-          <Name>{name}</Name>
-          <p>{phone}</p>
+          <NameWrapper>
+            <Name>{name}</Name>
+            <p>{phone}</p>
+          </NameWrapper>
           <Button
             type="button"
             onClick={() => {

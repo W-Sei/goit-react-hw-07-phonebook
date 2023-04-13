@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import image from "../../images/wp7606734.webp"
 
 export const Wrapper = styled.div`
   padding: 64px;
@@ -6,10 +7,10 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
 
-  background-color: #f9f0be;
+  /* background-color: #f9f0be; */
+  background-image: url(${image});
   max-width: 700px;
   margin: 20px auto;
   border-radius: 20px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
  `;
