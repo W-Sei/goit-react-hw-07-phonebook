@@ -26,10 +26,11 @@ export const AddNumberInput = styled(Field)`
   border: 1px transparent;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 8px;
-  transition:all 0.3s ease;
+  transition: all 0.3s ease;
   :hover,
   :focus {
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
 `;
 
@@ -38,18 +39,16 @@ export const Button = styled.button`
   height: 35px;
   margin-top: 20px;
   font-weight: 700;
-  /* background-color: white; */
   background-image: url(${imageButton});
   border-radius: 10px;
   border: 1px solid grey;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-  transition:all 0.3s ease;
+  transition: all 0.3s ease;
   :hover,
   :focus {
     background-color: #f7e2b2;
     border: 1px solid black;
     color: black;
-    /* font-weight: 800; */
     transform: scale(1.1);
   }
 `;

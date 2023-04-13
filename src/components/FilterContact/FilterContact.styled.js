@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import image from "../../images/wp7606734.webp"
-
+import image from '../../images/wp7606734.webp';
 
 export const ContactsInput = styled.input`
   height: 35px;
@@ -10,10 +9,11 @@ export const ContactsInput = styled.input`
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-      transition:all 0.3s ease;
+  transition: all 0.3s ease;
   :hover,
   :focus {
-     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
 `;
 

@@ -14,9 +14,6 @@ export const Item = styled.li`
   align-items: center;
   justify-content: flex-end;
   gap: 15px;
-  /* background-color: white;
-  border: transparent;
-  border-radius: 10px; */
 `;
 
 export const NameWrapper = styled.div`
@@ -31,19 +28,17 @@ export const NameWrapper = styled.div`
   padding: 4px;
   padding-left: 7px;
   padding-right: 7px;
-`
+`;
 
 export const Button = styled.button`
   border: 1px solid grey;
   border-radius: 10px;
   width: 100px;
-  /* border: 1px transparent; */
   padding: 5px;
   font-weight: 600;
-  /* background-color: white; */
-   background-image: url(${imageButton});
+  background-image: url(${imageButton});
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition:all 0.3s ease;
+  transition: all 0.3s ease;
   :hover,
   :focus {
     background-color: #f7e2b2;
